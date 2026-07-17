@@ -1,0 +1,71 @@
+/* ==========================================
+   DESIGN SYSTEM
+   Rafael Soldera Portfolio
+========================================== */
+
+:root{
+
+    /* ======================
+       COLORS
+    ====================== */
+
+    --bg-primary:#0B1120;
+    --bg-secondary:#111827;
+    --bg-card:#1E293B;
+
+    --primary:#2563EB;
+    --primary-light:#3B82F6;
+
+    --accent:#38BDF8;
+
+    --white:#F8FAFC;
+
+    --gray-100:#E2E8F0;
+    --gray-300:#CBD5E1;
+    --gray-500:#94A3B8;
+
+    /* ======================
+       TYPOGRAPHY
+    ====================== */
+
+    --font-title:'Poppins',sans-serif;
+
+    --font-text:'Inter',sans-serif;
+
+    /* ======================
+       BORDER RADIUS
+    ====================== */
+
+    --radius-sm:8px;
+
+    --radius-md:14px;
+
+    --radius-lg:24px;
+
+    --radius-xl:40px;
+
+    /* ======================
+       SHADOWS
+    ====================== */
+
+    --shadow-sm:0 8px 18px rgba(0,0,0,.15);
+
+    --shadow-md:0 12px 28px rgba(0,0,0,.25);
+
+    --shadow-lg:0 18px 45px rgba(0,0,0,.35);
+
+    /* ======================
+       TRANSITIONS
+    ====================== */
+
+    --transition:.35s ease;
+
+    /* ======================
+       SPACING
+    ====================== */
+
+    --section-padding:120px;
+
+    --container-width:1200px;
+
+}

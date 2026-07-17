@@ -2,147 +2,485 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Rafael Soldera | Data Analytics</title>
+    <title>Rafael Soldera | Financial Analyst | Data Analytics</title>
+
+    <meta name="description"
+        content="Portfólio profissional de Rafael Soldera - Financial Analyst, Data Analytics, Business Intelligence e Process Automation.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
 
     <!-- Bootstrap -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
     <!-- CSS -->
+
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- ==========================================
+                NAVBAR
+    =========================================== -->
 
-<div class="container">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
 
-<a class="navbar-brand fw-bold" href="#">
-Rafael Soldera
-</a>
+        <div class="container">
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
+            <a class="navbar-brand" href="#home">
 
-<span class="navbar-toggler-icon"></span>
+                Rafael <span>Soldera</span>
 
-</button>
+            </a>
 
-<div class="collapse navbar-collapse" id="menu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
 
-<ul class="navbar-nav ms-auto">
+                <span class="navbar-toggler-icon"></span>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Home</a>
-</li>
+            </button>
 
-<li class="nav-item">
-<a class="nav-link" href="#">Sobre</a>
-</li>
+            <div class="collapse navbar-collapse" id="menu">
 
-<li class="nav-item">
-<a class="nav-link" href="#">Projetos</a>
-</li>
+                <ul class="navbar-nav ms-auto">
 
-<li class="nav-item">
-<a class="nav-link" href="#">Contato</a>
-</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
 
-</ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
 
-</div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
 
-</div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
 
-</nav>
+                </ul>
 
+                <div class="social-icons">
 
-<section class="hero">
+                    <a href="https://www.linkedin.com/in/rafaelsoldera" target="_blank">
 
-<div class="container">
+                        <i class="bi bi-linkedin"></i>
 
-<div class="row align-items-center">
+                    </a>
 
-<div class="col-lg-6">
+                    <a href="https://github.com/rafaelsoldera" target="_blank">
 
-<h1>
+                        <i class="bi bi-github"></i>
 
-Olá,
+                    </a>
 
-sou
+                </div>
 
-<span>Rafael Soldera</span>
+            </div>
 
-</h1>
+        </div>
 
-<h2>
+    </nav>
 
-Data Analytics
+    <!-- ==========================================
+                HERO
+    =========================================== -->
 
-Business Intelligence
+    <section id="home" class="hero">
 
-Automation
+        <div class="container">
 
-</h2>
+            <div class="row align-items-center">
 
-<p>
+                <div class="col-lg-7">
 
-Transformando dados em decisões inteligentes através da tecnologia.
+                    <span class="hero-tag">
 
-</p>
+                        Olá, eu sou
 
-<a href="#" class="btn btn-primary btn-lg">
+                    </span>
 
-<i class="bi bi-download"></i>
+                    <h1>
 
-Download CV
+                        Rafael <span>Soldera</span>
 
-</a>
+                    </h1>
 
-<a href="https://linkedin.com/in/rafaelsoldera"
+                    <h2>
 
-target="_blank"
+                        Financial Analyst
 
-class="btn btn-outline-light btn-lg">
+                        <br>
 
-<i class="bi bi-linkedin"></i>
+                        Data Analytics
 
-LinkedIn
+                        <br>
 
-</a>
+                        Business Intelligence
 
-</div>
+                        <br>
 
-<div class="col-lg-6 text-center">
+                        Process Automation
 
-<img
-src="assets/images/profile.png"
-class="img-fluid hero-image"
-alt="Rafael Soldera">
+                    </h2>
 
-</div>
+                    <p>
 
-</div>
+                        Mais de 10 anos de experiência em Finanças,
+                        evoluindo para Ciência de Dados, Business Intelligence
+                        e Automação de Processos.
 
-</div>
+                    </p>
 
-</section>
+                    <div class="hero-buttons">
 
+                        <a href="#projects" class="btn btn-primary">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+                            Ver Projetos
 
-<script src="js/script.js"></script>
+                        </a>
+
+                        <a href="assets/documents/Curriculo_Rafael_Soldera.pdf"
+                            class="btn btn-outline-light">
+
+                            Download CV
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 text-center">
+
+                    <div class="profile-wrapper">
+
+                        <img src="assets/images/profile.jpg"
+                            alt="Rafael Soldera"
+                            class="profile-image">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                INDICADORES
+    =========================================== -->
+
+    <section class="stats">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h3>10+</h3>
+
+                        <p>Anos de Experiência</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h3>Power BI</h3>
+
+                        <p>Dashboards</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h3>Python</h3>
+
+                        <p>Data Analytics</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="stat-card">
+
+                        <h3>SQL</h3>
+
+                        <p>Banco de Dados</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                SOBRE
+    =========================================== -->
+
+    <section id="about" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+
+                Sobre Mim
+
+            </h2>
+
+            <p class="section-text">
+
+                Sou profissional da área Financeira com sólida experiência em
+                Planejamento Financeiro, Controladoria, Business Intelligence e
+                Automação de Processos.
+
+                Atualmente curso Pós-Graduação em Ciência de Dados e Big Data
+                pela PUC Minas, ampliando minha atuação para Analytics,
+                Inteligência Artificial e Engenharia de Dados.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                SKILLS
+    =========================================== -->
+
+    <section id="skills" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+
+                Competências
+
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-bar-chart-fill"></i>
+
+                        <h4>Power BI</h4>
+
+                        <p>Dashboards Executivos</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-code-slash"></i>
+
+                        <h4>Python</h4>
+
+                        <p>Análise e Automação</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-database-fill"></i>
+
+                        <h4>SQL</h4>
+
+                        <p>Banco de Dados</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+
+                    <div class="skill-card">
+
+                        <i class="bi bi-gear-fill"></i>
+
+                        <h4>Power Automate</h4>
+
+                        <p>Automação Inteligente</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                PROJETOS
+    =========================================== -->
+
+    <section id="projects" class="section">
+
+        <div class="container">
+
+            <h2 class="section-title">
+
+                Projetos
+
+            </h2>
+
+            <div class="row">
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <h4>Dashboard Financeiro</h4>
+
+                        <p>Em desenvolvimento.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <h4>Automação Power Automate</h4>
+
+                        <p>Em desenvolvimento.</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-4">
+
+                    <div class="project-card">
+
+                        <h4>Python Analytics</h4>
+
+                        <p>Em desenvolvimento.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                CONTATO
+    =========================================== -->
+
+    <section id="contact" class="section">
+
+        <div class="container text-center">
+
+            <h2 class="section-title">
+
+                Vamos conversar?
+
+            </h2>
+
+            <p>
+
+                Estou aberto para oportunidades e novos desafios.
+
+            </p>
+
+            <a href="mailto:SEUEMAIL@EMAIL.COM" class="btn btn-primary">
+
+                Entrar em contato
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+                FOOTER
+    =========================================== -->
+
+    <footer>
+
+        <div class="container text-center">
+
+            <p>
+
+                © 2026 Rafael Soldera
+
+                •
+
+                Data Analytics Portfolio
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
 
 </body>
 

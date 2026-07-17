@@ -1,36 +1,137 @@
-/* ===============================
-   RESET
-================================== */
+/* ======================================================
+   RAFAEL SOLDERA PORTFOLIO
+   VERSION 1.0
+====================================================== */
 
-*{
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
-    background:#07131F;
+    background:var(--bg-primary);
 
-    font-family:'Inter',sans-serif;
+    color:var(--white);
 
-    color:white;
+    font-family:var(--font-text);
+
+    line-height:1.7;
+
+    overflow-x:hidden;
 
 }
 
-/* ===============================
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:30px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--accent);
+
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+/* =========================
+   IMAGENS
+========================= */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* =========================
+   SECTION
+========================= */
+
+.section{
+
+    padding:var(--section-padding) 0;
+
+}
+
+.section-title{
+
+    font-family:var(--font-title);
+
+    font-size:2.4rem;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.section-text{
+
+    color:var(--gray-300);
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:1.05rem;
+
+}
+
+/* =========================
    NAVBAR
-================================== */
+========================= */
 
 .custom-navbar{
 
-    background:rgba(7,19,31,.55);
+    background:rgba(11,17,32,.75);
 
-    backdrop-filter:blur(14px);
+    backdrop-filter:blur(18px);
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    border-bottom:1px solid rgba(255,255,255,.05);
 
-    transition:.35s;
+    transition:var(--transition);
 
     padding:18px 0;
 
@@ -38,27 +139,27 @@ body{
 
 .navbar-brand{
 
-    font-size:1.6rem;
+    color:var(--white);
+
+    font-family:var(--font-title);
 
     font-weight:700;
 
-    color:white;
+    font-size:1.5rem;
 
 }
 
 .navbar-brand span{
 
-    color:#38BDF8;
+    color:var(--accent);
 
 }
 
 .nav-link{
 
-    color:#CBD5E1;
+    color:var(--gray-300);
 
     margin-left:25px;
-
-    transition:.3s;
 
     font-weight:500;
 
@@ -66,13 +167,21 @@ body{
 
 .nav-link:hover{
 
-    color:#38BDF8;
+    color:var(--accent);
 
 }
 
-.linkedin-btn{
+.social-icons{
 
-    margin-left:25px;
+    display:flex;
+
+    gap:14px;
+
+    margin-left:35px;
+
+}
+
+.social-icons a{
 
     width:42px;
 
@@ -86,21 +195,19 @@ body{
 
     border-radius:50%;
 
-    background:#2563EB;
+    background:var(--bg-card);
 
-    color:white;
+    color:var(--white);
 
-    text-decoration:none;
-
-    transition:.3s;
+    font-size:1.1rem;
 
 }
 
-.linkedin-btn:hover{
+.social-icons a:hover{
+
+    background:var(--primary);
 
     transform:translateY(-3px);
-
-    background:#38BDF8;
 
 }
 
@@ -113,5 +220,257 @@ body{
 .navbar-toggler:focus{
 
     box-shadow:none;
+
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding-top:120px;
+
+}
+
+.hero-tag{
+
+    color:var(--accent);
+
+    font-weight:600;
+
+}
+
+.hero h1{
+
+    font-family:var(--font-title);
+
+    font-size:4rem;
+
+    margin:15px 0;
+
+}
+
+.hero h1 span{
+
+    color:var(--primary-light);
+
+}
+
+.hero h2{
+
+    color:var(--gray-300);
+
+    font-size:1.45rem;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    color:var(--gray-500);
+
+    font-size:1.1rem;
+
+    max-width:650px;
+
+    margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* =========================
+   FOTO
+========================= */
+
+.profile-wrapper{
+
+    width:350px;
+
+    height:350px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--accent)
+    );
+
+    padding:8px;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.profile-image{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+}
+
+/* =========================
+   BOTÕES
+========================= */
+
+.btn{
+
+    border-radius:50px;
+
+    padding:14px 28px;
+
+    font-weight:600;
+
+}
+
+/* =========================
+   STATS
+========================= */
+
+.stats{
+
+    padding:60px 0;
+
+}
+
+.stat-card{
+
+    background:var(--bg-card);
+
+    border-radius:var(--radius-lg);
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.stat-card h3{
+
+    color:var(--accent);
+
+    font-size:2rem;
+
+    margin-bottom:10px;
+
+}
+
+.stat-card p{
+
+    color:var(--gray-300);
+
+    margin:0;
+
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.skill-card,
+.project-card{
+
+    background:var(--bg-card);
+
+    padding:35px;
+
+    border-radius:var(--radius-lg);
+
+    text-align:center;
+
+    transition:var(--transition);
+
+    height:100%;
+
+}
+
+.skill-card:hover,
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.skill-card i{
+
+    font-size:2.5rem;
+
+    color:var(--accent);
+
+    margin-bottom:20px;
+
+    display:block;
+
+}
+
+.skill-card h4,
+.project-card h4{
+
+    margin-bottom:15px;
+
+    font-family:var(--font-title);
+
+}
+
+.skill-card p,
+.project-card p{
+
+    color:var(--gray-500);
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    padding:35px 0;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,.05);
+
+    color:var(--gray-500);
 
 }
